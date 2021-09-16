@@ -13,33 +13,33 @@ Academic work developed in the subject of Construção de Aplicações em Ambien
 
 <a href="https://www.linkedin.com/in/lweslen/">
   <img
-    src="https://img.shields.io/badge/-informational?style=for-the-badge&logo=linkedin&logoColor=white&color=014F86"
+    src="https://img.shields.io/badge/informational?style=for-the-badge&logo=linkedin&logoColor=white&color=014F86"
     alt="Linkedin"
   />
 </a>
 <a href="https://www.github.com/lweslen/">
   <img
-    src="https://img.shields.io/badge/-informational?style=for-the-badge&logo=github&logoColor=white&color=014F86"
+    src="https://img.shields.io/badge/informational?style=for-the-badge&logo=github&logoColor=white&color=014F86"
     alt="Github"
   />
 </a>
 <br/>
 <a href="https://www.twitter.com/lweslen1/">
   <img
-    src="https://img.shields.io/badge/-informational?style=for-the-badge&logo=twitter&logoColor=white&color=014F86"
+    src="https://img.shields.io/badge/informational?style=for-the-badge&logo=twitter&logoColor=white&color=014F86"
     alt="Twitter"
   />
 </a>
 <a href="https://www.instagram.com/weslen.dev/">
   <img
-    src="https://img.shields.io/badge/-informational?style=for-the-badge&logo=Instagram&logoColor=white&color=014F86"
+    src="https://img.shields.io/badge/informational?style=for-the-badge&logo=Instagram&logoColor=white&color=014F86"
     alt="Instagram"
   />
 </a>
 <br/>
 <a href="https://www.youtube.com/channel/UCKiSOLXbf8zVdDJ6VfiPzgA">
   <img
-    src="https://img.shields.io/badge/-informational?style=for-the-badge&logo=youtube&logoColor=white&color=014F86"
+    src="https://img.shields.io/badge/-nformational?style=for-the-badge&logo=youtube&logoColor=white&color=014F86"
     alt="Youtube"
   />
 </a>
