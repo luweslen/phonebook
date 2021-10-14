@@ -20,12 +20,12 @@ To run the project on your machine follow these steps:
 
 ## 📙 About
 
-Academic work developed in the subject of Construção de Aplicações em Ambiente Visual in the course of Tecnologia em Analise e Desenvolvimento de Sistemas in Instituto Federal do Paraná using Python and Tkinter.
+Academic work developed in the subject of **Building applications in a virtual environment** in the course of **Tecnologia em Analise e Desenvolvimento de Sistemas** in **Instituto Federal do Paraná** using Python and Tkinter.
 
 > **College:** [Instituto Federal do Paraná - campus Londrina](https://londrina.ifpr.edu.br) \
 > **Course:** [Tecnologia em Analise e Desenvolvimento de Sistemas](https://londrina.ifpr.edu.br/tecnologia-em-analise-e-desenvolvimento-de-sistemas/componentes-curriculares/) \
 > **Subject:** Building applications in a virtual environment \
-> **Professor:** [Fernando Accorsi](https://github.com/diogoolsen)
+> **Professor:** [Diogo Olsen](https://github.com/diogoolsen)
 
 ## 👨‍💻 Made by
 
