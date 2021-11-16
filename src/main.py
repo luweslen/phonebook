@@ -1,5 +1,5 @@
 from tkinter import Tk, PhotoImage
-from views.View import View
+from views.view import View
 
 class App:
     def __init__(self):

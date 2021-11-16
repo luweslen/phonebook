@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import W, E, Frame, Label, END, StringVar, Radiobutton, Checkbutton, Button, Entry, BooleanVar
 from controllers.controller import Controller
 
 class View:
@@ -44,7 +44,7 @@ class View:
 
     self.form['name']['label'] = Label(self.form['container'], text='Nome: ')
     self.form['name']['label'].grid(row=1, column=0)
-    self.form['name']['value']  = Entry(self.form['container'])
+    self.form['name']['value'] = Entry(self.form['container'])
     self.form['name']['value'].grid(row=1, column=1, columnspan=2, sticky=W+E)
 
     self.form['phone']['label'] = Label(self.form['container'], text='Telefone: ')
