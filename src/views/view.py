@@ -1,4 +1,4 @@
-from tkinter import W, E, Frame, Label, END, StringVar, Radiobutton, Checkbutton, Button, Entry, BooleanVar
+from tkinter import W, E, Frame, Label, END, StringVar, Radiobutton, Checkbutton, Button, Entry, BooleanVar, messagebox
 from controllers.controller import Controller
 
 class View:
@@ -6,7 +6,6 @@ class View:
     self.root = root
     self.form = {
       'container': None,
-      '_id': None,
       'name': {
           'label': None,
           'value': None,
@@ -157,6 +156,16 @@ class View:
         self.contacts['items'], 
         width=20,
         text="Excluir",
-        command= lambda id = contact['_id']: self.controller.remove_contact(id)
+        command= lambda id = contact['_id'], name = contact['name']: self.controller.pre_remove(id, name)
       ).grid(row=current_row, column=2)
       count += 1
+
+  def show_messagebox(self, message, type='showinfo', title=None):
+    if type == 'showinfo':
+      result = messagebox.showinfo(title=title, message=message)
+    elif type == 'showerror':
+      result = messagebox.showerror(title=title, message=message)
+    elif type == 'askquestion':
+      result = messagebox.askquestion(title=title, message=message)
+
+    return result

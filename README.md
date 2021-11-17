@@ -12,11 +12,22 @@ To run the project on your machine follow these steps:
    ```bash
    cd phonebook-py
    ```
-3. run the command:
+3. Install dependencies:
    ```bash
-   python3 src/main.py
+   pip3 install -r requirements.txt
    ```
-4. Enjoy yourself! :)
+
+4. Create an `.env` file with the environment variables equal to `.env.example`:
+
+5. Run the command:
+   ```bash
+   python3 src/main.py 
+   ```
+   or
+   ```bash
+   ./dev.sh
+   ```
+6. Enjoy yourself! :)
 
 ## 📙 About
 

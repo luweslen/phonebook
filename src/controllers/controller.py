@@ -10,27 +10,43 @@ class Controller:
     try:
       body = self.view.get_values_form()
       self.model.create(body)
+
+      self.view.show_messagebox('Contato adicionado com sucesso')
       self.view.reset_form()
+
       self.get_contacts()
     except ValueError as err:
-      print(str(err))
+      self.view.show_messagebox(str(err), type='showerror')
 
   def update_contact(self):
     try:
       body = self.view.get_values_form()
       self.model.update(self.id, body)
+
+      self.view.show_messagebox('Contato atualizado com sucesso')
       self.view.reset_form()
+
       self.get_contacts()
     except ValueError as err:
-      print(str(err))
+      self.view.show_messagebox(str(err), type='showerror')
 
   def pre_update(self, contact):
     self.id = contact['_id']
     self.view.set_form(contact)
 
+  def pre_remove(self, id, name):
+    message = f'Certeza que deseja excluir {name} dos contatos'
+    result = self.view.show_messagebox(message, type='askquestion')
+
+    if result == 'yes':
+      self.remove_contact(id)
+
   def remove_contact(self, id):
-    self.model.remove(id)
-    self.get_contacts()
+    try:
+      self.model.remove(id)
+      self.get_contacts()
+    except ValueError as err:
+      self.view.show_messagebox(str(err), type='showerror')
 
   def search_contact(self):
     body = self.view.get_values_form()
@@ -43,4 +59,10 @@ class Controller:
 
   def get_contacts(self, params=None):
     contacts = self.model.get_all(params)
-    self.view.set_contacts(contacts) 
+
+    if len(contacts) > 0:
+      self.view.set_contacts(contacts)
+    else:
+      message = f'Não foi encontrado nenhum contato com este nome.'
+      self.view.show_messagebox(message)
+
